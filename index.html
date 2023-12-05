@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promptify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        /* Add your scribblings background styles here if needed */
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.doodle1 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 20%;
+    height: 20%;
+    transform: translateX(-100%);
+}
+
+.doodle2 {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    width: 20%;
+    height: 20%;
+    transform: translateX(90%) rotate(45deg);
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .doodle1 {
+        left: 50%; /* Adjust as needed */
+        transform: translateX(-50%);
+    }
+
+    .doodle2 {
+        right: 50%; /* Adjust as needed */
+        transform: translateX(50%) rotate(45deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Doodle container -->
+    <div class="doodle-container">
+        <im src="" alt="" class="doodle1">
+        <im src="" alt="" class="doodle2">
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="logo">Promptify beta</h1>
+                </div>
+                <div class="login-section">
+                    <a href="login.html" class="login-button">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Your Ultimate ChatGPT Prompt Generator</h1>
+                <h2 class="hero-subheadline">Generate streamlined prompts for better results</h2>
+                <a href="signup.html" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <section id="features-benefits" class="features-benefits">
+        <div class="container">
+            <h2 class="section-title">Features and Benefits</h2>
+            <div class="features-benefits-cards">
+                <!-- Feature 1 -->
+                <div class="card">
+                    <img src="path/to/feature1-icon.png" alt="Feature 1" class="feature-icon">
+                    <h3 class="feature-title">Intuitive Interface</h3>
+                    <p class="feature-description">Simplify your workflow with our intuitive interface designed for seamless navigation and efficiency.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="card">
+                    <img src="path/to/feature2-icon.png" alt="Feature 2" class="feature-icon">
+                    <h3 class="feature-title">Streamlined Results</h3>
+                    <p class="feature-description">Generate streamlined prompts for better, high quality results from ChatGPT.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="card">
+                    <img src="path/to/feature3-icon.png" alt="Feature 3" class="feature-icon">
+                    <h3 class="feature-title">Prompt History</h3>
+                    <p class="feature-description">Easily access your generated prompts in a prompt history.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="social-proof" class="social-proof">
+        <div class="container">
+            <div class="doodle-container">
+            <im src="doodle2.svg" alt="" class="doodle1">
+        </div>
+            <h2 class="section-title">What Others Think</h2>
+            <div class="social-proof-cards">
+                <!-- Testimonial 1 -->
+                <div class="card">
+                    <img src="sarah.jpeg" alt="Testimonial 1" class="testimonial-image">
+                    <div class="card-content">
+                        <p class="testimonial-text">"Promptify has transformed the way I use ChatGPT. It's intuitive, efficient, and helps me generate prompts for accurate results. !"</p>
+                        <p class="testimonial-author">- Sarah Thompson, Student</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="card">
+                    <img src="david.jpeg" alt="Testimonial 2" class="testimonial-image">
+                    <div class="card-content">
+                        <p class="testimonial-text">"Ngl, i was ChatGPT to generate my thesis but wasnt getting the results i wanted. After, trying Promptify, I can say for certain that its the best😆."</p>
+                        <p class="testimonial-author">- David Rodriguez, Student</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="card">
+                    <img src="emily.jpeg" alt="Testimonial 3" class="testimonial-image">
+                    <div class="card-content">
+                        <p class="testimonial-text">"I just decided to try it out for no reason coz i didn't believe it. Its cool."</p>
+                        <p class="testimonial-author">- Emily Carter, Prompt Engineer</p>
+                    </div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="card">
+                    <img src="michael.jpeg" alt="Testimonial 4" class="testimonial-image">
+                    <div class="card-content">
+                        <p class="testimonial-text">"Lately I've been having difficulty writing blog posts. I decided to use Promptify. Well, it really makes it easy to get good high quality blogs from ChatGPT.  I just feel like more can be done the site to make it better !"</p>
+                        <p class="testimonial-author">- Michael Anderson, blogger</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricing-card">
+                <h3 class="plan-name">Basic</h3>
+                <p class="plan-price">$0/month</p>
+                <ul class="plan-features">
+                    <li>Limited Number Of Prompts </li>
+                    <li>Quick Generate Prompts</li>
+                    <li>Improved Results</li>
+                    <li>Prompt History</li>
+                    <li>24/7 customer support</li>
+                    <li>No setup fee</li>
+                </ul>
+                <a href="signup.html" class="cta-button">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3 class="plan-name">Pro</h3>
+                <p class="plan-price">$9.99/month</p>
+                <ul class="plan-features">
+                    <li>Unlimited Number Of Prompts</li>
+                    <li>Quick Generate Prompts</li>
+                    <li>Improved Results</li>
+                    <li>Prompt Translator</li>
+                    <li>Online Community</li>
+                    <li>Free Prompt Library</li>
+                    <li>Prompt Voting and Rating</li>
+                    <li>24/7 customer support</li>
+                    <li>No setup fee</li>
+                </ul>
+                <a href="#" class="cta-button">Coming Soon!</a>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="question">How do I get started?</h3>
+                <p class="answer">To get started, simply sign up on our website and create an account. Once you've logged in, you can explore all the features and functionalities.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">Can I cancel my subscription at any time?</h3>
+                <p class="answer">Yes, you can cancel your subscription at any time. Simply go to your account settings and follow the cancellation process. Please note that there are no refunds for partial months.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">Is my data secure?</h3>
+                <p class="answer">We take data security seriously. We use industry-standard encryption protocols to safeguard your data and ensure it remains protected. Your privacy is our top priority.</p>
+            </div>
+        </div>
+    </section>
+    <section id="trust-security" class="trust-security">
+        <div class="container">
+            <h2 class="section-title">Trust and Security</h2>
+            <div class="trust-content">
+                <div class="trust-item">
+                    <img src="path/to/secure-icon.png" alt="Secure Icon" class="trust-icon">
+                    <h3 class="trust-title">Secure Transactions</h3>
+                    <p class="trust-description">We prioritize the security of your transactions. Our platform utilizes advanced encryption and secure payment gateways to ensure your sensitive information is protected.</p>
+                </div>
+                <div class="trust-item">
+                    <img src="path/to/privacy-icon.png" alt="Privacy Icon" class="trust-icon">
+                    <h3 class="trust-title">Data Privacy</h3>
+                    <p class="trust-description">Your privacy is important to us. We adhere to strict privacy policies and regulations to safeguard your personal data. Rest assured that your information is handled with the utmost confidentiality.</p>
+                </div>
+                <div class="trust-item">
+                    <img src="path/to/trust-icon.png" alt="Trust Icon" class="trust-icon">
+                    <h3 class="trust-title">Trusted by Many</h3>
+                    <p class="trust-description">Be part of the satisfied customers who trust our platform. We have built a strong reputation for delivering reliable services and outstanding customer support. Your satisfaction is our top priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="path/to/logo.png" alt="Logo">
+                    <h3 class="footer-logo-text">Promptify</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-info">© 2023 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        ScrollReveal().reveal('.section-title', { delay: 300, distance: '20px', origin: 'bottom' });
+        ScrollReveal().reveal('.card', { delay: 500, distance: '20px', origin: 'bottom' });
+        ScrollReveal().reveal('.pricing-card', { delay: 500, distance: '20px', origin: 'bottom' });
+        ScrollReveal().reveal('.faq-item', { delay: 500, distance: '20px', origin: 'bottom' });
+        ScrollReveal().reveal('.trust-item', { delay: 500, distance: '20px', origin: 'bottom' });
+    </script>
+</body>
+</html>
